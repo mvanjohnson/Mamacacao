@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fff9f3;
+  --foreground: #311a11;
+  --cacao-900: #2e170f;
+  --cacao-700: #5f321d;
+  --sand-100: #fff2df;
+  --aqua-500: #35c7cf;
+  --magenta-500: #d95c9a;
+  --gold-500: #f3b237;
+  --leaf-500: #83b94a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-playfair);
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 12%, rgba(53, 199, 207, 0.2), transparent 22%),
+    radial-gradient(circle at 82% 10%, rgba(131, 185, 74, 0.16), transparent 20%),
+    radial-gradient(circle at 88% 78%, rgba(217, 92, 154, 0.18), transparent 24%),
+    radial-gradient(circle at 50% 110%, rgba(243, 178, 55, 0.14), transparent 34%),
+    linear-gradient(115deg, rgba(255, 244, 228, 0.72), rgba(255, 249, 241, 0.88)),
+    radial-gradient(circle at 5% 5%, rgba(53, 199, 207, 0.18), transparent 28%),
+    radial-gradient(circle at 95% 15%, rgba(217, 92, 154, 0.14), transparent 30%),
+    radial-gradient(circle at 25% 85%, rgba(243, 178, 55, 0.13), transparent 30%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.02em;
+}
+
+.grain-overlay {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.18) 0.6px, transparent 0.6px);
+  background-size: 3px 3px;
+}
+
+.glass-card {
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0 20px 50px -30px rgba(32, 14, 9, 0.45);
+  backdrop-filter: blur(10px);
+}
+
+.section-card {
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 25px 60px -40px rgba(47, 23, 15, 0.55);
+  backdrop-filter: blur(12px);
+}
+
+.font-avinga {
+  font-family: var(--font-avinga), serif;
+}
+
+.accent-gradient {
+  background-image: linear-gradient(120deg, var(--aqua-500), var(--magenta-500), var(--gold-500));
+}
+
+.cacao-gradient {
+  background-image: linear-gradient(130deg, #2e170f 0%, #5f321d 38%, #d95c9a 100%);
+}
+
+.hero-video-overlay {
+  background:
+    linear-gradient(to bottom, rgba(20, 10, 6, 0.55) 0%, rgba(20, 10, 6, 0.35) 45%, rgba(20, 10, 6, 0.65) 100%),
+    radial-gradient(circle at 50% 40%, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55));
+}
